@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: #EFF6FF;
+  color: #2A4A5C;
+}
+
+/* Header */
+
+.logo-container {
+  background: center / cover no-repeat url(../img/bg.jpg);
+  width: 55%;
+  height: auto;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+/* Main */
+
+.register-container {
+  padding: 2.5rem 3rem;
+  width: 45%;
+  background-color: #fff;
+}
+
+.register-container > header {
+  margin: 3rem 0;
+}
+
+.register-container {
+  box-shadow: 7px 0px 20px #EEEEEE;
+}
+
+h1 {
+  margin-bottom: 18px;
+}
+
+p {
+  color: #7B8A92;
+}
+
+/* Social Buttons */
+
+.media {
+  margin-bottom: 40px;
+}
+
+.media > button {
+  position: relative;
+  padding: 12px 60px 12px 47px;
+  border: none;
+  color: #fff;
+  width: 250px;
+}
+
+.media > button::before {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 20px;
+}
+
+.media .fb-btn {
+  background-color: #255A9B;
+}
+
+.media .lin-btn {
+  background-color: #0076B6;
+}
+
+.media .fb-btn::before {
+  content: url(../img/facebook.svg);
+}
+
+.media .lin-btn::before {
+  content: url(../img/linkedin.svg);
+  left: 15px;
+  width: 18px;
+}
+
+.media button + button {
+  margin-left: 30px;
+}
+
+/* Horizontal Line */
+
+.hr {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  color: #7B8A92;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.hr .hr-left {
+  margin-top: 5px;
+  width: 180px;
+  border-top: 1px solid #EEEEEE;
+}
+
+.hr div + div {
+  margin-left: 5px;
+}
+
+.hr .hr-right {
+  margin-top: 5px;
+  width: 180px;
+  border-top: 1px solid #EEEEEE;
+}
+
+/* Form */
+
+form {
+  margin-top: 40px;
+}
+
+/* Email and phone inputs */
+
+.info label {
+  position: relative;
+}
+
+.info label + label {
+  margin-left: 30px;
+}
+
+.info input {
+  padding: 25px 70px 12px 8px;
+  border: 1px solid #EEEEEE;
+  color: #000;
+}
+
+.info input[type="email"] {
+  border-left: 1px solid #3698FB;
+}
+
+.info label[for="email"]::before {
+  content: 'Email';
+  position: absolute;
+  top:-18px;
+  left: 8px;
+  font-size: 0.9rem;
+  color: #AFAFAF;
+}
+
+.info label[for="phone"]::before {
+  content: 'Phone';
+  position: absolute;
+  top: -18px;
+  left: 8px;
+  font-size: 0.9rem;
+  color: #AFAFAF;
+}
+
+.selector {
+  margin-top: 40px;
+}
+
+.selector p {
+  margin: 12px 0 40px;
+}
+
+/* Radio */
+
+.radio-btn label {
+  color: #000;
+}
+
+.radio-btn label + label {
+  margin-left: 30px;
+}
+
+.radio-btn input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #dbdada;
+  transition: 0.2s all linear;
+
+  position: relative;
+  top: 4px;
+}
+
+.radio-btn input:checked {
+  border: 4px solid #3698FB;
+}
+
+.radio-btn input + span {
+  margin-left: 5px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 30px;
+}
+
+.footer .term {
+  padding: 10px;
+  width: 260px;
+  box-shadow: 0px 10px 50px #EEEEEE;
+}
+
+.footer .check_box {
+  margin: 40px 0 50px;
+}
+
+.check_box input {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #EEEEEE;
+
+  position: relative;
+  top: 2px;
+}
+
+.check_box span {
+  margin-left: 5px;
+}
+
+.check_box span a {
+  color: #3698FB;
+}
+
+/* Create Button */
+
+.footer button {
+  padding: 15px 70px;
+
+  border: none;
+  border-radius: 4px;
+  background-color: #3698FB;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
